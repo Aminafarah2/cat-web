@@ -1,6 +1,7 @@
-import React,{useState,useEffect} from 'react'
-import axios from "axios";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import { catOptions } from '../option';
+
 
  function Favorites() {
     const [favorites, setFavorites] = useState(null);
@@ -40,7 +41,7 @@ import { catOptions } from '../option';
         </button>
         <div className="favorite-image-grid">
           {catData?.slice(0, 6).map((cat) => (
-            <div  key={cat.image_id}className="image-button-pair">
+            <div className="image-button-pair">
               <div> {cat.image_id}</div>
               <img className="grid-image" src={cat.url}  alt=""/>
             </div>
@@ -48,5 +49,6 @@ import { catOptions } from '../option';
         </div>
       </section>
     );
-}
+  };
+
 export default Favorites;
