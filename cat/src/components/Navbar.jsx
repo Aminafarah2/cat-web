@@ -11,7 +11,9 @@ function Navbar() {
               pets
             </span>
             <div className="navbar-title-text">Home</div>
+            
           </h3>
+         
         </Link>
 
         <div className="navbar-right-part">

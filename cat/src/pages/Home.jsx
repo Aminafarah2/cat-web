@@ -1,7 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import axios from 'axios';
-import { apiKey } from '../Api';
-import { catOptions } from '../option';
+import { catOptions} from '../option';
  function Home() {
     const [catData, setCatData] = useState(null);
   const fetchData = () => {
@@ -25,7 +24,7 @@ import { catOptions } from '../option';
 
   const onClickAdd = (event, catId) => {
     event.preventDefault();
-
+    const apiKey ="live_nRKWY9QIBqUnbrx2bhFA1ItiRYdN2HBKFUlugaulHcoLXpe4hNUvKZq9J14mPdtL"
     const catAddFavoriteOptions = {
       headers: {
         "Content-Type": "application/json",
